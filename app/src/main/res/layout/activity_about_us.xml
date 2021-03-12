@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AboutUs"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AU1"
+        android:text="@string/about_us"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AU2"
+        android:text="The application was made as a part of a term paper for non-commercial purposes (for now)"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AU3"
+        android:text="Application authors: Butnyk Mykhailo, Podhorny Bohdan"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="cursive"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom"/>
+</LinearLayout>

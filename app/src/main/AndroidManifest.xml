@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kursovaya">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:name=".support_classes.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher1_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.CalendarActivity"
+            android:label="Select watching date"/>
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.ApiActivity"
+            android:theme="@style/AppTheme.Full"/>
+        <activity android:name=".activities.SettingsActivity" />
+        <activity android:name=".activities.RegistrationActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.AuthorizationActivity"/>
+        <activity android:name=".activities.FilmDetailsActivity"
+            android:theme="@style/AppTheme.Full"/>
+        <receiver android:name=".support_classes.NotificationPublisher" />
+        <activity android:name=".activities.ChosenActivity"
+            android:label="Chosen"/>
+        <activity android:name=".activities.AboutUs"
+            android:label="@string/about_us"
+            android:theme="@style/Dialog"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="120dp"
+    android:layout_marginHorizontal="70dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/re_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:hint="@string/reg_email_text"/>
+
+    <EditText
+        android:id="@+id/re_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:hint="@string/reg_login_text"/>
+
+    <EditText
+        android:id="@+id/re_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:inputType="textPassword"
+        android:hint="@string/reg_password_text"/>
+
+    <EditText
+        android:id="@+id/re_password_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:inputType="textPassword"
+        android:hint="@string/reg_password_again_text"/>
+
+    <Button
+        android:id="@+id/re_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="60dp"
+        android:text="@string/au_signup_text"/>
+
+
+</LinearLayout>

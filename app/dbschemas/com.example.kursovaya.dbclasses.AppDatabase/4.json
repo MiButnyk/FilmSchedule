@@ -1,0 +1,176 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 4,
+    "identityHash": "b49b0421ccc52e75485d5e60e5f04d61",
+    "entities": [
+      {
+        "tableName": "Film",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`filmId` INTEGER NOT NULL, `title` TEXT, `release_date` TEXT, `overview` TEXT, `vote_average` REAL, PRIMARY KEY(`filmId`))",
+        "fields": [
+          {
+            "fieldPath": "filmId",
+            "columnName": "filmId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "releaseDate",
+            "columnName": "release_date",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "overview",
+            "columnName": "overview",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "voteAverage",
+            "columnName": "vote_average",
+            "affinity": "REAL",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "filmId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "FilmCast",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`castId` INTEGER NOT NULL, `character` TEXT, `name` TEXT, `gender` INTEGER, PRIMARY KEY(`castId`))",
+        "fields": [
+          {
+            "fieldPath": "castId",
+            "columnName": "castId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "character",
+            "columnName": "character",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "gender",
+            "columnName": "gender",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "castId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Details",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`imdbID` INTEGER NOT NULL, `originalTitle` TEXT, `title` TEXT, `budget` INTEGER, `genre` TEXT, `productionCompanies` TEXT, `overview` TEXT, `popularity` REAL, `releaseDate` TEXT, `revenue` INTEGER, `voteAverage` REAL, PRIMARY KEY(`imdbID`))",
+        "fields": [
+          {
+            "fieldPath": "imdbID",
+            "columnName": "imdbID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "originalTitle",
+            "columnName": "originalTitle",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "budget",
+            "columnName": "budget",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "genres",
+            "columnName": "genre",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Companies",
+            "columnName": "productionCompanies",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "overview",
+            "columnName": "overview",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "popularity",
+            "columnName": "popularity",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "releaseDate",
+            "columnName": "releaseDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "revenue",
+            "columnName": "revenue",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "voteAverage",
+            "columnName": "voteAverage",
+            "affinity": "REAL",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "imdbID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'b49b0421ccc52e75485d5e60e5f04d61')"
+    ]
+  }
+}

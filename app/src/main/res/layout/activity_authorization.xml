@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/au_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal = "true"
+        android:layout_above = "@+id/au_password"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="60dp"
+        android:hint="@string/au_email_text" />
+
+    <EditText
+        android:id="@+id/au_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent = "true"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="60dp"
+        android:hint="@string/au_password_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/au_password"
+        android:layout_alignStart="@+id/au_password"
+        android:layout_alignEnd="@+id/au_password"
+        android:layout_marginVertical="10dp">
+
+        <Button
+            android:id="@+id/au_login"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/au_login_text"/>
+
+        <Button
+            android:id="@+id/au_signup"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/au_signup_text"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
